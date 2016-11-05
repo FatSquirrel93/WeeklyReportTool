@@ -6,7 +6,6 @@ before_install:
   echo "extension = ldap.so.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
 
 before_script:
-  --with-ldap=shared
   - composer update --prefer-dist --prefer-stable
 script:
   - mkdir -p build/logs
