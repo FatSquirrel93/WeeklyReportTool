@@ -7,7 +7,6 @@ before_install:
 
 before_script:
   - cp .env.travis .env
-  - php artisan key:generate
   - composer update --prefer-dist --prefer-stable
 script:
   - mkdir -p build/logs
