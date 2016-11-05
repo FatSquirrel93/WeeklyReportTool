@@ -167,7 +167,8 @@ return [
          * Package Service Providers...
          */
 
-        //
+        Adldap\Laravel\AdldapServiceProvider::class,
+        Adldap\Laravel\AdldapAuthServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -226,6 +227,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        'Adldap' => Adldap\Laravel\Facades\Adldap::class,
     ],
 
 ];
